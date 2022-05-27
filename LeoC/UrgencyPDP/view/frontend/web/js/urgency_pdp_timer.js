@@ -51,8 +51,9 @@ define(["jquery"], function($) {
             DAY != 6 /*Sabato*/ &&
             hours_left <= max_hours /*range di ore in cui visualizzare il messaggio*/ &&
             time_left >= min_minutes /*range di minuti in cui visualizzare il messaggio*/ ) {
-            const hours_left_text = hours_left != 0 ? (`${hours_left} or${hours_left==1?'a':'e'} e `) : ``;
-            element.innerText = `Ordina entro ${hours_left_text}${minutes_left} minut${minutes_left==1?'o':'i'} per ricevere i tuoi prodotti domani`;
+            	const hours_left_text = hours_left != 0 ? (`${hours_left} or${hours_left==1?'a':'e'} e `) : ``;
+            	element.innerText = `Ordina entro ${hours_left_text}${minutes_left} minut${minutes_left==1?'o':'i'} per ricevere i tuoi prodotti domani`;
+		element.classList.add("urgency");
         }
         /*
 		//istruzioni usate per il debug
