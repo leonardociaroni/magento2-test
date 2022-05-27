@@ -1,0 +1,16 @@
+.urgency {
+	background-color: #ffc62a;
+	color: #333333;
+	font-size: 1.4rem;
+	font-weight: 600;
+	padding: 1rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+/**
+ * Stile utilizzato a solo scopo dimostrativo.
+ */
+.box-tocart, .box-tocart>.fieldset {
+	margin-bottom: 0.5rem !important;
+}

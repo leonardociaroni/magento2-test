@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+		<css src="LeoC_UrgencyPDP::css/urgency.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<!--Tra il bottone "aggiungi a carrello" e "aggiungi a wishlist"-->
+		<referenceContainer name="product.info.social">
+		<block class="LeoC\UrgencyPDP\Block\UrgencyBlock"
+		name="catalog.product.view.extrablock"
+		before="product.info.addto"
+		template="LeoC_UrgencyPDP::urgency_pdp_message.phtml"/>
+		</referenceContainer>
+	</body>
+</page>

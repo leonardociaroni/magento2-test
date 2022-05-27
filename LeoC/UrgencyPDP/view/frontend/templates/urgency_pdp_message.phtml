@@ -1,0 +1,8 @@
+<?php
+	$urgency_bool = $block->getCurrentProduct()->getCustomAttribute('urgency_pdp');
+	$timezone = $block->getStoreTimezone();
+	if (isset($urgency_bool)) {
+		if ($urgency_bool->getValue()) {
+			echo "<div data-mage-init='{\"urgency_pdp_timer\":{\"timezone\":\"${timezone}\"}}' class='urgency'></div>";
+		}}
+?>
